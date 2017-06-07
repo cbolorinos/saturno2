@@ -30,7 +30,7 @@ body {
 .preloader_hide {opacity:0;}
 #preloader {position:fixed; left:50%; top:50%; width:32px; height:32px; margin:-16px 0 0 -16px; display:block;}
 
-section {background-color:#fff;}
+section {background-color:#404040;}
 
 .container {padding-left:0; padding-right:0;}
 
@@ -93,6 +93,7 @@ a:hover, a:focus {text-decoration:none; color:#333;}
 .padbot70 {padding-bottom:70px !important;}
 .padbot80 {padding-bottom:80px !important;}
 .padtop0 {padding-top:0 !important;}
+.padtop40 {padding-top:40px !important;}
 
 .overlay {
 	position:absolute;
@@ -121,11 +122,12 @@ p {margin:0 0 20px;}
 h2, h3, h4, h5, h6 {
 	margin-top:0;
 	font-family: 'josefin sans', sans-serif;
-	text-transform:none;
+	text-transform:uppercase;
 	font-weight:300;
-	color:#333;
+	color:#f9a432;
 }
-h1 {margin:0 0 26px; line-height:46px; font-size:46px; font-family: 'Roboto', sans-serif;}
+h1 {margin:0 0 26px; line-height:46px; font-size:46px; font-family: 'Roboto', sans-serif; text-transform: uppercase; color:#606060;}
+h1 b {color:#404040;}
 h2 {margin:0 0 26px; line-height:40px; font-size:40px;}
 h2 b {font-weight:500;}
 h3 {margin:0 0 21px; line-height:25px; font-size:22px;}
@@ -238,7 +240,7 @@ header {
 
 
 /* __________ Logo __________ */
-.logo {float:left;}
+.logo {float:left; max-width: 150px; margin-top:12px;}
 .logo a {
 	text-transform:uppercase;
 	line-height:80px;
@@ -267,7 +269,7 @@ header {
 	right:0;
 	height:80px;
 	width:100%;
-	background-color:#fff;
+	background-color:#404040;
 	box-shadow:0 2px 3px rgba(0,0,0,0.1);
 }
 
@@ -283,13 +285,13 @@ header {
 	font-weight:900;
 	line-height:20px;
 	font-size:13px;
-	color:#666;
+	color:#fff;
 	transition: all 0.3s ease-in-out; 
 	-webkit-transition: all 0.3s ease-in-out;
 }
 .navmenu li:hover a,
 .navmenu li.active a {
-	color:#333;
+	color:#ddd;
 }
 
 /* Sub menu */
@@ -408,10 +410,9 @@ header {
 /*-----------------------------------------------------------------------------------*/
 /*	ABOUT
 /*-----------------------------------------------------------------------------------*/
-#about {padding-top:70px;}
+#about {z-index: 2; overflow: hidden; position: relative;}
 
 /* __________ Services __________ */
-.services_block {padding:7px 0 0;}
 
 .services_item {
 	display:block;
@@ -639,7 +640,13 @@ header {
 /*-----------------------------------------------------------------------------------*/
 /*	FEATURED WORKS
 /*-----------------------------------------------------------------------------------*/
-#projects {padding-top:47px;}
+#projects {
+	padding-top:70px;
+	z-index: 2;
+	overflow: hidden;
+	position: relative;
+	background:#fff;
+}
 
 .work_item {
 	position:relative;
@@ -807,6 +814,9 @@ ul.project_info li span {color:#979797;}
 	background-image:url(../images/team_bg.jpg);
 	background-size:cover;
 	background-attachment:fixed !important;
+	z-index: 2;
+	overflow: hidden;
+	position: relative;
 }
 
 .crewman_item {
