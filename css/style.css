@@ -88,12 +88,14 @@ a:hover, a:focus {text-decoration:none; color:#333;}
 .padbot20 {padding-bottom:20px !important;}
 .padbot30 {padding-bottom:30px !important;}
 .padbot40 {padding-bottom:40px !important;}
-.padbot50 {padding-bottom:50px !important;}
+.padbot50 {padding-bottom:50px !important;} /* THIS IS BAD FORM, DONT USE THIS KINDA SHIT MAN */
 .padbot60 {padding-bottom:60px !important;}
 .padbot70 {padding-bottom:70px !important;}
 .padbot80 {padding-bottom:80px !important;}
 .padtop0 {padding-top:0 !important;}
 .padtop40 {padding-top:40px !important;}
+.padtop60 {padding-top:60px !important;}
+.padtop70 {padding-top:70px !important;}
 
 .overlay {
 	position:absolute;
@@ -413,17 +415,6 @@ header {
 /*-----------------------------------------------------------------------------------*/
 /*	TIMELINE
 /*-----------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
 .timeline {
     position: relative;
     padding: 0;
@@ -488,14 +479,15 @@ header {
     margin-left: 0;
     border-radius: 100%;
     text-align: center;
-    color: #fff;
+    color: #404040;
     background-color: #f9a432;
 }
 
 .timeline>li .timeline-image h4 {
-    margin-top: 12px;
+    margin-top: 20%;
     font-size: 10px;
     line-height: 14px;
+    color:#404040;
 }
 
 .timeline>li.timeline-inverted>.timeline-panel {
@@ -535,7 +527,6 @@ header {
 .timeline .timeline-body>ul {
     margin-bottom: 0;
 }
-
 @media(min-width:768px) {
     .timeline:before {
         left: 50%;
@@ -561,7 +552,7 @@ header {
     }
 
     .timeline>li .timeline-image h4 {
-        margin-top: 16px;
+        margin-top: 25%;
         font-size: 13px;
         line-height: 18px;
     }
@@ -586,6 +577,9 @@ header {
         width: 150px;
         height: 150px;
         margin-left: -75px;
+        -webkit-box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.75);
     }
 
     .timeline>li .timeline-image h4 {
