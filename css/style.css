@@ -481,6 +481,9 @@ header {
     text-align: center;
     color: #404040;
     background-color: #f9a432;
+    -webkit-box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.75);
 }
 
 .timeline>li .timeline-image h4 {
@@ -533,8 +536,7 @@ header {
     }
 
     .timeline>li {
-        margin-bottom: 100px;
-        min-height: 100px;
+        min-height: 60px;
     }
 
     .timeline>li .timeline-panel {
@@ -552,7 +554,7 @@ header {
     }
 
     .timeline>li .timeline-image h4 {
-        margin-top: 25%;
+        margin-top: 23%;
         font-size: 13px;
         line-height: 18px;
     }
@@ -566,7 +568,7 @@ header {
 
 @media(min-width:992px) {
     .timeline>li {
-        min-height: 150px;
+        min-height: 100px;
     }
 
     .timeline>li .timeline-panel {
@@ -574,18 +576,9 @@ header {
     }
 
     .timeline>li .timeline-image {
-        width: 150px;
-        height: 150px;
-        margin-left: -75px;
         -webkit-box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.75);
 		-moz-box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.75);
 		box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.75);
-    }
-
-    .timeline>li .timeline-image h4 {
-        margin-top: 30px;
-        font-size: 18px;
-        line-height: 26px;
     }
 
     .timeline>li.timeline-inverted>.timeline-panel {
@@ -595,7 +588,7 @@ header {
 
 @media(min-width:1200px) {
     .timeline>li {
-        min-height: 170px;
+        min-height: 130px;
     }
 
     .timeline>li .timeline-panel {
@@ -603,17 +596,18 @@ header {
     }
 
     .timeline>li .timeline-image {
-        width: 170px;
-        height: 170px;
-        margin-left: -85px;
-    }
-
-    .timeline>li .timeline-image h4 {
-        margin-top: 40px;
+        width: 130px;
+        height: 130px;
+        margin-left: -65px;
     }
 
     .timeline>li.timeline-inverted>.timeline-panel {
         padding: 0 100px 20px 20px;
+    }
+
+    .timeline>li .timeline-image h4 {
+        font-size: 18px;
+        line-height: 26px;
     }
 }
 
@@ -854,11 +848,18 @@ header {
 /*	FEATURED WORKS
 /*-----------------------------------------------------------------------------------*/
 #projects {
-	padding-top:70px;
+	padding:70px 0 80px 0;
 	z-index: 2;
 	overflow: hidden;
 	position: relative;
-	background:#fff;
+	background: rgba(255,255,255,1);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 65%, rgba(237,237,237,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(65%, rgba(255,255,255,1)), color-stop(100%, rgba(237,237,237,1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 65%, rgba(237,237,237,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 65%, rgba(237,237,237,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 65%, rgba(237,237,237,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 65%, rgba(237,237,237,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
 }
 
 .work_item {
@@ -1012,7 +1013,30 @@ ul.project_info li span {color:#979797;}
 .our_clients .client_img:hover {opacity:1;}
 
 
-
+/*-----------------------------------------------------------------------------------*/
+/*	SOFTWARE
+/*-----------------------------------------------------------------------------------*/
+#software {
+	padding:0px 0 80px 0;
+	z-index: 99;
+	overflow: hidden;
+	position: relative;
+	background: rgba(255,255,255,1);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 65%, rgba(237,237,237,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(65%, rgba(255,255,255,1)), color-stop(100%, rgba(237,237,237,1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 65%, rgba(237,237,237,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 65%, rgba(237,237,237,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 65%, rgba(237,237,237,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 65%, rgba(237,237,237,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+}
+.software-header {
+	padding:20px 0 1px 0;
+	background-color: #404040;
+}
+.software-header h1{
+	color:#fff;
+}
 
 
 
@@ -1023,7 +1047,7 @@ ul.project_info li span {color:#979797;}
 /*	OUR TEAM
 /*-----------------------------------------------------------------------------------*/
 #team {
-	padding:75px 0 100px;
+	padding:0 0 100px;
 	background-image:url(../images/team_bg.jpg);
 	background-size:cover;
 	background-attachment:fixed !important;
