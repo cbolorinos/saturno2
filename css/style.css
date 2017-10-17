@@ -232,13 +232,31 @@ blockquote:before {content:'“'; position:absolute; left:15px; top:13px; font-s
 /*-----------------------------------------------------------------------------------*/
 header {
 	position:relative;
-	height:80px;
-	background-color:#fff;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.92+1,0+100 */
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.92) 1%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.92) 0%,rgba(0,0,0,0.92) 1%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(0,0,0,0.92) 0%,rgba(0,0,0,0.92) 1%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
 
 /* __________ Logo __________ */
-.logo {float:left;}
+.logo {
+	width:250px;
+	border:1px solid #fff;
+	text-align: center;
+	margin: 20px auto;
+}
+.icon-left{
+	position: absolute;
+	top:0;
+	left:200px;
+}
+.icon-right{
+	position: absolute;
+	top:0;
+	right:200px;
+}
 .logo a {
 	text-transform:uppercase;
 	line-height:80px;
@@ -267,8 +285,10 @@ header {
 	right:0;
 	height:80px;
 	width:100%;
-	background-color:#fff;
-	box-shadow:0 2px 3px rgba(0,0,0,0.1);
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.92) 1%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.92) 0%,rgba(0,0,0,0.92) 1%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(0,0,0,0.92) 0%,rgba(0,0,0,0.92) 1%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
 .navmenu ul li {
@@ -349,20 +369,20 @@ header {
 /*-----------------------------------------------------------------------------------*/
 #search-form form {
 	position:relative;
-	height:40px;
-	margin:20px 0 20px 19px;
+	height:50px;
+	margin:20px 0 20px 0;
 	padding-left:49px;
-	border-left:1px solid #ccc;
+	color:#fff;
 	font-family: FontAwesome;
 }
 #search-form form:before {
 	content: "\f002";
 	position:absolute;
-	left:29px;
+	left:25px;
 	top:-2px;
 	height:40px;
 	line-height:40px;
-	font-size:15px;
+	font-size:20px;
 	color:#cccc;
 }
 
@@ -375,7 +395,7 @@ header {
 	font-weight:300;
 	line-height:20px;
 	font-size: 13px;
-	color: #999;	
+	color: #fff;	
 	background: none;
 	border: 0;
 	box-shadow: none;	 
